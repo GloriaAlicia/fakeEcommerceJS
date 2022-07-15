@@ -1,0 +1,62 @@
+:root{
+    font-family: "Noto Sans", Helvetica, sans-serif;
+    --radius: 10px;
+    --primaryColor: #7aceff;
+}
+body{
+    background-color: #eeeeee;
+}
+.title{
+    text-align: center;
+}
+.container{
+    width: 100%;
+}
+.containerProducts{
+    padding: 2vw;
+
+}
+.category{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2vw;
+}
+.card{
+    position: relative;
+    border-radius: var(--radius);
+    background-color: #fff;
+    padding: 3vw;
+}
+.card::after{
+    content: "new";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    padding: 10px 10px 10px 15px;
+    border-radius: 0 var(--radius) 0 0;
+    background-color: var(--primaryColor);
+}
+.containerImg .imageProduct{
+    height: 300px;
+}
+.imageProduct{
+    width: 100%;
+    object-fit: contain;
+}
+.titleProduct{
+    font-family: "Noto Sans", Helvetica, sans-serif;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.buttonAddCart{
+    border-radius: var(--radius);
+    background-color: var(--primaryColor);
+    padding: 10px;
+}
