@@ -117,6 +117,9 @@ button { /* 1 */
 }
 input{
   overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
 }
 
 button,
