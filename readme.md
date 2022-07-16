@@ -8,4 +8,6 @@ limitar el numero de elementos
 retornar los productos en un array de objetos
 mostrar en pantalla cada producto
 
+crear página para ver cada categoria
+
 ## Detalles de Fake Store API

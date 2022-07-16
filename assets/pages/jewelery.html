@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,800;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,800;1,200&display=swap rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>jewelery</title>
 </head>
-
 <body>
     <main class="container">
         <nav class="menu">
             <ul class="items">
-                <li class="title link">€</li>
+                <li>
+                    <a href="./../../index.html" class="title link">€</a>
+                </li>
                 <li class="search">
                     <input type="text" name="search" id="seeker" placeholder="search">
                     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
@@ -35,21 +35,13 @@
                 </li>
             </ul>
         </nav>
-        <section class="landing">
-            <h1 class="title">Fake €commerce</h1>
-            <p>we picked up some bright cool things for you</p>
-            <a href=""></a>
-        </section>
 
         <section id="products"></section>
-
-        <footer>
-            <img src="./assets/svg/wave.svg" alt="wave">
-        </footer>
     </main>
-
-    <script src="./assets/app/showProducts.js"></script>
-    <script src="./assets/app/home.js"></script>
+    <script src="../app/showProducts.js"></script>
+    <script src="../app/categorys.js"></script>
+    <script>
+        getCategory("jewelery")
+    </script>
 </body>
-
 </html>

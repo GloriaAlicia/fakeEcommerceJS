@@ -25,8 +25,8 @@
   const productsWomanClothing = await getProductsByCategory(API, "women's clothing")
   const productsMenClothing = await getProductsByCategory(API, "men's clothing")
 
-  showProductsByCategory(productsElectronics, "link")
-  showProductsByCategory(productsJewelery, "link")
-  showProductsByCategory(productsWomanClothing, "link")
-  showProductsByCategory(productsMenClothing, "link")
+  showProductsByCategory(productsElectronics, "electronics.html")
+  showProductsByCategory(productsJewelery, "jewelery.html")
+  showProductsByCategory(productsWomanClothing, "women.html")
+  showProductsByCategory(productsMenClothing, "men.html")
 })();

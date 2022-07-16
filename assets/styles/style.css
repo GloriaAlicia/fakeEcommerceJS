@@ -2,16 +2,24 @@
     font-family: "Noto Sans", Helvetica, sans-serif;
     --radius: 10px;
     --primaryColor: #FF8B5B;
+    --orangeBlack: #AB3200;
     --black: #15163d;
     --gap: 9px
 }
 
 body {
     background-color: #eeeeee;
-    color: var(--black);
 }
+.container {
+    width: 100%;
+    color: var(--black);
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .menu {
+    width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -37,6 +45,7 @@ body {
 }
 
 .landing {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,16 +65,12 @@ body {
     font-weight: 100;
     text-align: center;
 }
-
-.container {
-    width: 100%;
+#products{
+    width: 95%;
 }
-
 .containerProducts {
     padding: 2vw;
-
 }
-
 .category {
     text-transform: uppercase;
     font-weight: 500;
@@ -86,6 +91,7 @@ body {
 }
 .seeMore{
     display: flex;
+    align-items: center;
     gap: var(--gap);
     cursor: pointer;
 }
@@ -141,4 +147,11 @@ body {
     border-radius: var(--radius);
     background-color: var(--primaryColor);
     padding: var(--gap);
+}
+
+a{
+    color: var(--black);
+}
+a:visited{
+    color:var(--orangeBlack);
 }
