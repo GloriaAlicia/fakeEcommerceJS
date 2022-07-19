@@ -40,5 +40,5 @@ $form.addEventListener("submit", (e) => {
     }
 
     console.log(data)
-    sendRequest(e)
+    sendRequest(e, data)
 });
