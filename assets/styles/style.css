@@ -1,6 +1,7 @@
 :root {
     font-family: "Noto Sans", Helvetica, sans-serif;
     --radius: 10px;
+    --surfaceSection: #ffba9c;
     --primaryColor: #FF8B5B;
     --orangeBlack: #AB3200;
     --black: #15163d;
@@ -57,14 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.title {
-    margin: 0;
-    font-family: 'Syne', sans-serif;
-    font-size: 3rem;
-    font-weight: 100;
-    text-align: center;
-}
+/*********************products************************/
 #products{
     width: 95%;
 }
@@ -80,10 +74,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3vw;
+    margin: 3vw 0 2vw 0;
 }
-.paraghaph{
-    margin: 0;
+.paragraph{
+    margin: 3px 0;
 }
 .headerCategory img{
     height: 1rem;
@@ -113,6 +107,11 @@ body {
         26.8px 20.4px 35.3px rgba(0, 0, 0, 0.022),
         55.1px 42px 72.6px rgba(0, 0, 0, 0.028),
         151px 115px 199px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover{
+    transition: .5s;
+    transform: scale(1.02);
 }
 
 .card::after {
@@ -148,7 +147,38 @@ body {
     background-color: var(--primaryColor);
     padding: var(--gap);
 }
+/******************login********************/
+.login{
+    width: 90%;
+    border-radius: var(--radius);
+    padding: 17px 17px 17px 5vw;
 
+    background-image: linear-gradient(to right, var(--surfaceSection), transparent), url(https://images.unsplash.com/photo-1543269866-487350d6fa5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/******************general********************/
+.title {
+    margin: 0;
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.subtitle{
+    margin-bottom: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.margin-top{
+    margin-top: 3vw;
+}
+.margin-top{
+    margin-top: 1vw;
+}
 a{
     color: var(--black);
 }

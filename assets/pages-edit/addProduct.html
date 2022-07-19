@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,800;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/editProducts.css">
+
+    <title>add product</title>
+</head>
+<body>
+    <section class="form">
+        <h2 class="title">Add new product</h2>
+
+        <form id="formAddProduct" action=" https://api.escuelajs.co/api/v1/products/" method="POST">
+            <!--action=" https://api.escuelajs.co/api/v1/products/" method="POST"-->
+            <div class="field">
+                <label for="image" class="textLabel">image</label>
+                <input type="url" name="image" id="image" required placeholder="url of your image">
+            </div>
+
+            <div class="fields">
+                <div class="field">
+                    <label for="title" class="textLabel">title</label>
+                    <input type="text" name="title" id="title" required placeholder="text here">
+                </div>
+    
+                <div class="field">
+                    <label for="price" class="textLabel">price</label>
+                    <input type="number" name="price" id="price" required placeholder="must be greater than $0">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="description" class="textLabel">description</label>
+                <textarea class="areaText" name="description" id="description" required placeholder="text here"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="description" class="textLabel">category</label>
+                <select name="categoryId" id="category">
+                    <option value="6">Jewelery</option>
+                </select>
+            </div>
+            <button type="submit" class="primaryButton">add product</button>
+        </form>
+    </section>
+    <script src="../app/addProduct.js"></script>
+</body>
+</html>

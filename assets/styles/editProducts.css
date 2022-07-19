@@ -1,0 +1,51 @@
+.form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.fields{
+    width: 100%;
+    display: flex;
+    gap: var(--gap);
+}
+.field{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2vh 0;
+    flex-basis: 50%;
+}
+
+.field input {
+    padding: var(--gap);
+    border-radius: var(--radius);
+    outline: solid 1px var(--black);
+}
+
+.field input:focus, input:active{
+    outline: solid 2px var(--primaryColor);
+}
+/*************generic******************/
+.textLabel{
+    margin-bottom: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.areaText{
+    padding: var(--gap);
+    resize: none;
+    height: 10vh;
+    border-radius: var(--radius);
+    border: solid 1px var(--black);
+    background-color: transparent;
+}
+.areaText textarea:focus{
+    outline: solid 2px var(--primaryColor);
+}
+
+@media screen and (max-width: 680px) {
+    .fields{
+        flex-direction: column;
+    }
+}

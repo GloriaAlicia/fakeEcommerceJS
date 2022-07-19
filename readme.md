@@ -10,4 +10,19 @@ mostrar en pantalla cada producto
 
 crear página para ver cada categoria
 
+agregar nueva categoria
+link
+
 ## Detalles de Fake Store API
+
+## requisitos
+formulario convertirse en vendedor
+formulario de para iniciar sesión
+validar formularios
+
+agregar nuevo producto
+editar nuevo producto
+borrar nuevo producto
+
+barra de búsqueda
+*opcional: descripción de cada producto
